@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	height: 100dvh;
+	padding: 20px;
+	display: grid;
+	place-content: center;
+	background-image: url('images/bg-pattern-top.svg'),
+		url('images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top -200px left -200px, bottom -200px right -200px;
+	background-color: var(--dark-cyan);
+
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+
+	--dark-gray: hsl(0, 0%, 59%);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.card-container {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 300px;
+	box-shadow: 10px 20px 20px hsla(184, 51%, 35%, 0.6);
+}
+
+.background-img {
+	position: relative;
+}
+
+.profile-pic {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 100px;
+	border: 5px solid white;
+}
+
+.card-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+	gap: 5px;
+	padding-bottom: 20px;
+}
+
+.card-main h1 {
+	font-size: 1rem;
+}
+
+.card-main h1 span {
+	color: var(--dark-gray);
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.card-main p {
+	color: var(--dark-gray);
+	font-size: 0.9rem;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+}
+
+.card-footer div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+}
+
+.card-footer p {
+	font-weight: 700;
+}
+
+.card-footer span {
+	text-transform: capitalize;
+	font-size: 0.6rem;
+	color: var(--dark-gray);
+	letter-spacing: 2px;
+}
+
+hr {
+	opacity: 0.3;
+}
